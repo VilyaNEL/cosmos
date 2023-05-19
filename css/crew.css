@@ -1,0 +1,94 @@
+body {
+  background-image: url(../assets/crew/background-crew-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  padding-top: 212px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+}
+
+.title__num {
+  opacity: 0.25;
+  font-weight: 700;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.crew-list {
+  display: flex;
+}
+
+.crew-member {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  flex: 0 0 100%;
+}
+
+.crew-member__role {
+  opacity: 0.25;
+  font-weight: 400;
+  font-family: "Bellefair";
+  font-size: 32px;
+  text-transform: uppercase;
+  padding-bottom: 27px;
+}
+
+.crew-member__name {
+  text-transform: uppercase;
+  font-family: "Bellefair";
+  font-size: 56px;
+  padding-bottom: 27px;
+}
+
+.crew-member__bio {
+  font-family: "Barlow";
+  font-size: 18px;
+  line-height: 178%;
+  color: #d0d6f9;
+  width: 444px;
+}
+
+.crew-member__img {
+  height: 650px;
+}
+
+.slider-pagination {
+  position: absolute;
+  bottom: 94px;
+  display: flex;
+  gap: 24px;
+  z-index: 1000;
+}
+
+.pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 500%;
+  background-color: #d0d6f9;
+  opacity: 0.17;
+  transition: 0.5s;
+}
+
+.pagination-bullet:hover {
+  opacity: 0.5;
+}
+.pagination-bullet--active {
+  opacity: 1;
+}

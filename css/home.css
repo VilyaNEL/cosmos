@@ -1,0 +1,117 @@
+body {
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  padding-top: 387px;
+}
+
+.container {
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.main1 {
+  font-family: var(--ff-sm);
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+
+  color: #d0d6f9;
+}
+
+.space {
+  text-transform: uppercase;
+  font-size: 150px;
+  line-height: 150px;
+  margin: 24px 0;
+}
+
+.text__block {
+  width: 450px;
+}
+
+.text__cont {
+}
+
+.explore {
+  background-color: #ffffff;
+  border: none;
+  color: #0b0d17;
+  text-align: center;
+  display: inline-block;
+  font-size: 32px;
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-family: var(--ff-big);
+  position: relative;
+}
+
+.explore::after,
+.explore::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.explore::after {
+  opacity: 0.1;
+  transition: 0.3s;
+}
+.explore::before {
+  opacity: 0.4;
+  transition: 0.2s;
+}
+
+.explore:hover::before {
+  transform: scale(1.25);
+}
+.explore:hover::after {
+  transform: scale(1.5);
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-top: 112px;
+
+  }
+  .container {
+    flex-direction: column;
+    width: 95%;
+    text-align: center;
+  }
+  .text__block {
+    width: 100%;
+  }
+  .explore {
+    display: block;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    align-self: center;
+    margin-top: 81px;
+  }
+  .text__cont {
+    width: 100%;
+    font-size: 15px;
+  }
+  .space {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .main1 {
+    font-size: 16px;
+  }
+}
